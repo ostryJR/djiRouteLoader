@@ -12,12 +12,13 @@ struct MainView: View {
         NavigationStack {
             VStack{
                 Text("Home")
+                Button("connect"){connectToDatabase()}
             }.padding()
                     
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        //ContentView2()
+                        AddNewView()
                     } label: {
                         Image(systemName: "plus")
                     }
@@ -25,6 +26,12 @@ struct MainView: View {
                 }
             }
         }
+    }
+}
+
+struct AddNewView: View {
+    var body: some View{
+        Text("Add new")
     }
 }
 

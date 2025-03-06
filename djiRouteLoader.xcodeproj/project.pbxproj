@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2136659E2D78D41B00D728B4 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2136659D2D78D41B00D728B4 /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2136658B2D78D06D00D728B4 /* djiRouteLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = djiRouteLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		213665BE2D78D55700D728B4 /* Exceptions for "djiRouteLoader" folder in "djiRouteLoader" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"wayline_mission/A4F24663-7677-458A-BA6C-0992DAC0367C/mission_cover/cover.jpg",
+				"wayline_mission/A4F24663-7677-458A-BA6C-0992DAC0367C/waypoint_image/0.jpg",
+				"wayline_mission/A4F24663-7677-458A-BA6C-0992DAC0367C/waypoint_image/1.jpg",
+			);
+			target = 2136658A2D78D06D00D728B4 /* djiRouteLoader */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2136658D2D78D06D00D728B4 /* djiRouteLoader */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				213665BE2D78D55700D728B4 /* Exceptions for "djiRouteLoader" folder in "djiRouteLoader" target */,
+			);
 			path = djiRouteLoader;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2136659E2D78D41B00D728B4 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,7 @@
 			);
 			name = djiRouteLoader;
 			packageProductDependencies = (
+				2136659D2D78D41B00D728B4 /* SQLite */,
 			);
 			productName = djiRouteLoader;
 			productReference = 2136658B2D78D06D00D728B4 /* djiRouteLoader.app */;
@@ -94,6 +115,9 @@
 			);
 			mainGroup = 213665822D78D06D00D728B4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2136659C2D78D41B00D728B4 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2136658C2D78D06D00D728B4 /* Products */;
 			projectDirPath = "";
@@ -324,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2136659C2D78D41B00D728B4 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2136659D2D78D41B00D728B4 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2136659C2D78D41B00D728B4 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 213665832D78D06D00D728B4 /* Project object */;
 }
